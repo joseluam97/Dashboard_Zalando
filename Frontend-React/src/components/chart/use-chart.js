@@ -2,14 +2,10 @@ import merge from 'lodash/merge';
 
 import { alpha, useTheme } from '@mui/material/styles';
 
-import { useResponsive } from 'src/hooks/use-responsive';
-
 // ----------------------------------------------------------------------
 
 export default function useChart(options) {
   const theme = useTheme();
-
-  const smUp = useResponsive('up', 'sm');
 
   const LABEL_TOTAL = {
     show: true,
@@ -86,7 +82,7 @@ export default function useChart(options) {
 
     // Stroke
     stroke: {
-      width: 3,
+      width: 6,
       curve: 'smooth',
       lineCap: 'round',
     },
@@ -144,7 +140,7 @@ export default function useChart(options) {
     plotOptions: {
       // Bar
       bar: {
-        borderRadius: smUp ? 3 : 1,
+        borderRadius: 0.5,
         columnWidth: '28%',
         borderRadiusApplication: 'end',
         borderRadiusWhenStacked: 'last',
