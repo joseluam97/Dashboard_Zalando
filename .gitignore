@@ -1,0 +1,6 @@
+Backend-Node/node_modules/*
+Forntend-Angular/node_modules/*
+Forntend-Angular/.angular/*
+.env
+# Local Netlify folder
+.netlify
